@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Maybelline Guerrero">
+	<title> A Place For Him</title>
+	<link href="Stylesheetshop.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Thank You for Booking!</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Index</a></li>
+			<li><a href="Barbershop.html">Home</a></li>
+			<li><a href="About us.html">About Us</a> </li>
+			<li><a href="Services.html">Services</a> </li>
+			<li><a href="Appointments.html">Appointments</a> </li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h2>We Apprectiate Your Feedback</h2>
+			<p>If you have any additional comments or suggestions, please let us know:</p>
+			<form name="Feedback" action="submit_forms.html" method="post">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" 
+					placeholder="Your Full Name"
+					pattern="[A-Z][a-zA-Z]+ [A-Z][a-zA-Z]+" 
+					required><br>
+					
+				<label for="phone">Phone (###-###-####):</label>
+				<input type="text" id="phone" name="phone"
+					placeholder="###-###-####"
+					pattern="\d{3}-\d{3}-\d{4}"
+					required><br>
+					
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" 
+					placeholder="user@example.com" 
+					required><br>
+			</fieldset>
+			<fieldset>
+				<legend>Customer Feedback</legend>
+				<label for= "services">How easy is it to find what you're looking for on our website?</label>
+				<textarea id="services" name="services" placeholder="Your comments here..."></textarea><br>
+				<label for="experience">How can we enhance online experience with us?</label>
+				<textarea id="experinece" name="experince" placeholder="Your comments here..."></textarea><br>
+				<label for = "additional">What could we do to improve your experience at our barbershop?</label>
+				<textarea id= "additional" name "additional" placeholder="Your comments here..."></textarea><br>
+				<label for = "additional"> Do you have any additional comments or suggestions?</label>
+				<textarea id= "additional" name "additional" placeholder="Your comments here..."></textarea>
+				
+			</fieldset>
+			<fieldset>
+				<legend>Rate Your Experience</legend>
+				<label for="navigation">How easy was it to navigate?</label>
+				<select id="booking" name="booking">
+					<option value="very_easy">Very Easy</option>
+					<option value="easy">Easy</option>
+					<option value="neutral">Neutral</option>
+					<option value="difficult">Difficult</option>
+					<option value="very_difficult">Very Difficult</option>
+				</select><br><br>
+				<label for="overall">How would you rate your overall experience at our barbershop?</label>
+				<select id="overall" name="overall">
+					<option value="excellent">Excellent</option>
+					<option value="good">Good</option>
+					<option value="average">Average</option>
+					<option value="poor">Poor</option>
+				</select><br><br>
+				<label for="booking">How easy was it to book an appointment online?</label>
+				<select id="booking" name="booking">
+					<option value="very_easy">Very Easy</option>
+					<option value="easy">Easy</option>
+					<option value="neutral">Neutral</option>
+					<option value="difficult">Difficult</option>
+					<option value="very_difficult">Very Difficult</option>
+				</select><br><br>
+				<label for="rating">How would you like to rate us (1-5): </label>
+				<div class="rating">
+					<input type="radio" id="star5" name="rating" value="5">
+					<label for="star5" title="5 stars">&#9733; - 5</label>
+
+					<input type="radio" id="star4" name="rating" value="4">
+					<label for="star4" title="4 stars">&#9733; - 4</label>
+
+					<input type="radio" id="star3" name="rating" value="3">
+					<label for="star3" title="3 stars">&#9733; - 3</label>
+
+					<input type="radio" id="star2" name="rating" value="2">
+					<label for="star2" title="2 stars">&#9733; - 2</label>
+
+					<input type="radio" id="star1" name="rating" value="1">
+					<label for="star1" title="1 star">&#9733; - 1</label>
+					</div>
+			</fieldset>
+				<input type="Submit" value="Submit Feedback">
+				<input type= "Reset" value="Cancled">
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2024 A Place For Him. All rights reserved.</p>
+	</footer>
+</body>
+</html>

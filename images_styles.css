@@ -1,0 +1,146 @@
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-align: left;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.team-info {
+    max-width: 500px; 
+    text-align: left;
+}
+
+.meet-team{
+    text-align: center;
+    margin: 20px 0;
+}
+.owner-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-color); /* Darker Tan for owner name */
+    text-align: center;
+}
+
+section.contact-info {
+    background-color: var(--extra-light); /* Very Light Tan background */
+    color: var(--text-dark); /* Dark Text color */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: var(--max-width);
+    margin: 80px auto 0;
+    text-align: center;
+}
+.business-hours {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.business-hours h2 {
+    color: var(--primary-color-dark); /* Darker Tan color for heading */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section.contact-info h2 {
+    color: var(--primary-color-dark); /* Darker Tan color for heading */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section.contact-info p {
+    color: var(--text-light); /* Light Text color */
+    margin: 8px 0;
+    text-align: left;
+}
+
+section.contact-info a {
+    color: var(--primary-color); /* Darker Tan color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.contact-info a:hover {
+    color: var(--secondary-color); /* Yellow color for link hover effect */
+}
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    max-width: 800px;
+    margin: 40px auto;
+}
+.contact-info, .business-hours {
+    background-color: var(--extra-light);
+    color: var(--text-dark);
+    padding-top: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-info h2, .business-hours h2 {
+    color: var(--primary-color-dark);
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.contact-info p, .business-hours p {
+    color: var(--text-light);
+    margin: 6px 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.social-section {
+    background-color: var(--parimary-color);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--text-light);
+    text-align: center;
+    margin: 20px auto;
+    max-width: var(--max-width);
+}
+
+.social-section h2{
+    margin-bottom: 10px;
+}
+
+.social-media-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-button {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px; 
+    border-radius: 50%; 
+    background-color: var(--primary-color); 
+    color: var(--text-light); 
+    font-size: 28px; 
+    transition: background-color 0.3s; 
+}
+
+.social-button:hover {
+    background-color: var(--primary-color-dark); 
+    color: var(--text-light); 
+}
+
+.team-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+

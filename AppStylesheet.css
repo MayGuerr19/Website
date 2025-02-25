@@ -1,0 +1,73 @@
+
+section img {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+    font-size: 18px;
+    color: var(--text-light);
+    margin-top: 10px;
+}
+.center-link a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.center-link a:hover {
+    background-color: var(--primary-color-dark);
+}
+strong {
+    color: var(--primary-color-dark);
+}
+main {
+    padding: 3rem;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+header {
+    padding: 2rem;  /* Add padding for spacing */
+    text-align: center;  /* Center align the text */
+}
+
+header h1 {
+    font-size: 36px;  /* Large font size for prominence */
+    margin: 0;  /* Remove any default margins */
+    font-weight: bold;  /* Make the text bold for emphasis */
+    letter-spacing: 2px;  /* Add letter spacing for a cleaner look */
+}
+@media screen and (max-width: 768px) {
+    main {
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .center-link a {
+        font-size: 20px;
+        padding: 12px 25px;
+    }
+
+    section img {
+        width: 150px;
+        height: 150px;
+    }
+}

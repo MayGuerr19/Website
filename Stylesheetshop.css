@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary-color: #e5b86f; /* Darker Tan */
+    --primary-color-dark: #d4a85e; /* Darker Tan */
+    --secondary-color: #f9e73a; /* Yellow */
+    --text-dark: #1f2937; /* Dark Text */
+    --text-light: #6b7280; /* Light Text */
+    --extra-light: #fff8e1; /* Very Light Tan */
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--extra-light);
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #000; /* Black background for navigation */
+    position: fixed;
+    width: 100%;
+	top: 0;
+    z-index: 99;
+}
+
+.nav_content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.logo a:hover {
+    color: var(--secondary-color);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+	padding: 0;
+}
+ul li{
+	margin: 0;
+}
+
+ul li a {
+    padding: .5rem 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 85px); /* Adjust for fixed navbar */
+    padding: 20px;
+    text-align: center;
+    margin-top: calc(80px + 1rem); /* ensure margin below nav*/
+	z-index: 1;
+}
+
+.section_container {
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+	overflow: hidden;
+}
+
+.title {
+    font-size: 3rem; /* Increase title size */
+    margin: 0.5rem 0;
+    font-weight: 700; /* Bold weight */
+}
+
+.title span {
+    color: var(--primary-color); /* Color for the span text */
+    font-weight: 800; /* Slightly bolder for emphasis */
+    text-decoration: underline; /* Underline the span text */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+	margin-bottom: -5px;
+}
+
+.title span:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.5rem;
+	width: 100%;
+	max-width: var(--max-width);
+}
+.description {
+	flex: 1;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.actions_btns {
+    display: flex;
+    gap: 1rem;
+	margin-top: 1rem;
+}
+
+.actions_btns button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.actions_btns button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.image {
+    margin-top: 20px; /* Space above image */
+	flex: 0 0 400px;
+}
+
+.image img {
+    max-width: 100%; /* Allow full responsiveness */
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 8px 0;
+    background-color: #000; /* Black background for footer */
+    color: #ffffff;
+}
+
+@media (max-width: 750px) {
+    ul {
+        display: none; /* Hide by default */
+		flex-direction: column;
+		background-color: #000;
+		position: absolute;
+		top: 80px;
+		width: 100;
+		left: 0;
+    }
+
+    ul li {
+		text-align: center;
+        padding: 1rem 0; /* Add padding to list items */
+		border-bottom: 1px soild var(--primary-color);
+    }
+
+    .section_container {
+        flex-direction: column; /* Stack content vertically */
+    }
+	h1.title{
+		font-size: 1.5rem;
+	}
+	.actions_btns{
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.actions_btns button{
+		width: 100%
+	}
+	.section {
+        margin-top: calc(60px + 1rem);
+    }
+
+	.content{
+		flex-direction: column;
+	}
+
+	.description{
+		font-size: 1rem;
+	}
+	image{
+		flex: none;
+		width: 100%;
+	}
+}
